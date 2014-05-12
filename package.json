@@ -1,0 +1,21 @@
+{
+  "name": "bigpipe-godot",
+  "version": "0.0.0",
+  "description": "A simple plugin to expose a godot client on a bigpipe server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bigpipe",
+    "realtime",
+    "godot",
+    "metrics"
+  ],
+  "author": "Jarrett Cruger <jcrugzz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^0.8.1",
+    "godot": "^0.7.5"
+  }
+}
