@@ -1,6 +1,6 @@
 {
   "name": "bigpipe-godot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple plugin to expose a godot client on a bigpipe server",
   "main": "index.js",
   "scripts": {
