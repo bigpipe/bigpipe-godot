@@ -8,7 +8,8 @@ exports.server = function (pipe, options) {
   debug('initializing godot client')
 
   if (!opts.host || !opts.port) {
-    return pipe.emit('error', new Error('godot plugin requires a host and port'));
+    debug('Godot plugin not initialized since no host and port are found');
+    return;
   }
 
   //
