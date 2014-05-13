@@ -15,6 +15,7 @@ exports.server = function (pipe, options) {
   // Attach a reference we can access
   //
   var godot = pipe.godot = godot.createClient({
+    type: opts.type || 'tcp',
     host: opts.host,
     port: opts.port,
     reconnect: opts.reconnect || {}
