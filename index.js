@@ -15,7 +15,7 @@ exports.server = function (pipe, options) {
   //
   // Attach a reference we can access
   //
-  var godot = pipe.godot = godot.createClient({
+  pipe.godot = godot.createClient({
     type: opts.type || 'tcp',
     host: opts.host,
     port: opts.port,
@@ -25,8 +25,8 @@ exports.server = function (pipe, options) {
   //
   // Proxy relevant events and such
   //
-  godot.on('error', pipe.emit.bind(pipe, 'error'));
-  godot.on('connect', pipe.emit.bind(pipe, 'godot:connect'));
+  pipe.godot.on('error', pipe.emit.bind(pipe, 'error'));
+  pipe.godot.on('connect', pipe.emit.bind(pipe, 'godot:connect'));
 
-  godot.connect();
+  pipe.godot.connect();
 };
