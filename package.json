@@ -15,7 +15,7 @@
   "author": "Jarrett Cruger <jcrugzz@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "debug": "^0.8.1",
+    "debug": "^2.3.2",
     "godot": "^0.7.5"
   }
 }
